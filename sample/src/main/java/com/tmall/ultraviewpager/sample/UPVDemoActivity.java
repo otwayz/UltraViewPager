@@ -85,6 +85,12 @@ public class UPVDemoActivity extends ListActivity {
         demoList6.put("class", PagerActivity.class.getName());
         list.add(demoList6);
 
+        HashMap<String, String> demoList7 = new HashMap<>();
+        demoList7.put("name", "ScaleTransformer in horizontal with multi screen");
+        demoList7.put("style", "7");
+        demoList7.put("class", ViewPagerActivity.class.getName());
+        list.add(demoList7);
+
         ListAdapter listAdapter = new SimpleAdapter(this, list, android.R.layout.simple_list_item_1, new String[]{"name"}, new int[]{android.R.id.text1});
         setListAdapter(listAdapter);
     }
